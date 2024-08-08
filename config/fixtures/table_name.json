@@ -1,0 +1,35 @@
+[
+    {
+        "model": "config.tablename",
+        "pk": 1,
+        "fields": {
+            "slug": "53801dee-cb59-4139-89ae-3232b40cb782",
+            "name": "profit and loss account",
+            "is_active": true,
+            "c_on": "2020-12-19T17:11:19.464Z",
+            "u_on": "2021-04-11T04:04:36.444Z"
+        }
+    },
+    {
+        "model": "config.tablename",
+        "pk": 2,
+        "fields": {
+            "slug": "46b6c060-c680-4068-8910-1e9f28af608c",
+            "name": "trading account",
+            "is_active": true,
+            "c_on": "2020-12-19T17:11:25.205Z",
+            "u_on": "2021-04-11T04:04:47.419Z"
+        }
+    },
+    {
+        "model": "config.tablename",
+        "pk": 3,
+        "fields": {
+            "slug": "b5f902b7-328d-49b2-b126-d3214e38590a",
+            "name": "balance sheet",
+            "is_active": true,
+            "c_on": "2021-01-23T08:57:10.909Z",
+            "u_on": "2021-02-27T04:32:33.456Z"
+        }
+    }
+]

@@ -1,0 +1,16 @@
+# group 1
+User-Agent: *
+Disallow: /my-app/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /signup/
+Disallow: /signup/done/
+Disallow: /forget-password/
+
+# group 2
+User-agent: Scrapy
+Disallow: /
+
+# group 3
+User-agent: Trabajo
+Disallow: /

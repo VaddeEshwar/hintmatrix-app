@@ -1,0 +1,57 @@
+[
+    {
+        "model": "config.tableheader",
+        "pk": 1,
+        "fields": {
+            "slug": "b28920ab-8ed5-4ab9-8615-bf7e230409cf",
+            "name": "debit particulars",
+            "is_active": true,
+            "c_on": "2020-12-19T17:11:44.636Z",
+            "u_on": "2021-04-11T03:59:29.166Z"
+        }
+    },
+    {
+        "model": "config.tableheader",
+        "pk": 2,
+        "fields": {
+            "slug": "6853865e-3c4b-427c-95e2-0abde65849cf",
+            "name": "credit particulars",
+            "is_active": true,
+            "c_on": "2020-12-19T17:11:50.354Z",
+            "u_on": "2021-04-11T03:59:44.149Z"
+        }
+    },
+    {
+        "model": "config.tableheader",
+        "pk": 3,
+        "fields": {
+            "slug": "0c91b0be-2fc8-4a3b-9066-94f29b31074e",
+            "name": "liabilities side",
+            "is_active": true,
+            "c_on": "2021-01-23T09:00:32.134Z",
+            "u_on": "2021-02-27T04:31:34.813Z"
+        }
+    },
+    {
+        "model": "config.tableheader",
+        "pk": 4,
+        "fields": {
+            "slug": "dfdb8ff0-36ed-4e32-9c21-535a10ef6d5a",
+            "name": "asset side",
+            "is_active": true,
+            "c_on": "2021-01-23T09:01:55.908Z",
+            "u_on": "2021-02-27T04:31:49.636Z"
+        }
+    },
+    {
+        "model": "config.tableheader",
+        "pk": 5,
+        "fields": {
+            "slug": "4d28be3e-7152-4248-a2ff-27a837b1c46a",
+            "name": "adjustments",
+            "is_active": true,
+            "c_on": "2021-01-23T09:42:31.942Z",
+            "u_on": "2021-02-27T04:32:09.751Z"
+        }
+    }
+]

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
+    <title>SimpleTips 9</title>
+
+    <meta content='CA Final Accounts Subject' name='description'/>
+    <meta content='SimpleTips 9' name='author'/>
+
+    <meta name="distribution" content="global"/>
+    <meta name="language" content="en"/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css"
+          type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/slider/jquery.maximage.css"
+          type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/slider/screen.css" type="text/css"
+          media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+{% include 'secure/header_session.html' %}
+<div class="heading">
+    <h2 class="text-center">Create Question(s)</h2>
+</div>
+<div class="container">
+    {% if success %}
+    <h5>{{success}}</h5>
+    {% endif %}
+    <form action="" autocomplete="off" method="post" accept-charset="utf-8">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="question-text">
+                    <h5>Enter the question</h5>
+                    <textarea class="form-control" name="name"
+                              placeholder="Text Here"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-card mb-1 card">
+                    <div class="question-body">
+
+                        <div class="row">
+                            <div class="col-sm-12 headings">
+                                <div class="col-sm-4 col-xs-4 no-pad"><span>Debit Balance</span>
+                                </div>
+                                <div class="col-sm-2 col-xs-2 no-pad">
+                                    <span>Amount</span></div>
+                                <div class="col-sm-4 col-xs-4 no-pad"><span>Credit Balance</span>
+                                </div>
+                                <div class="col-sm-2 col-xs-2 no-pad">
+                                    <span>Amount</span></div>
+                            </div>
+                            <div id="question_create">
+                                <div class="col-sm-12 values">
+                                    <div class="col-sm-4 col-xs-4 no-pad">
+                                        <div class="form-field">
+                                            {{form.sel_debit_balance}}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 col-xs-2 no-pad">
+                                        <div class="form-field">
+                                            {{form.txt_debit_balance}}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad">
+                                        <div class="form-field">
+                                            {{form.sel_credit_balance}}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2 col-xs-2 no-pad">
+                                        <div class="form-field">
+                                            {{form.txt_credit_balance}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="col-sm-4 col-xs-12">
+                                    <button class="btn btn-info cls_add_more">Add
+                                        Row
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-4 col-xs-12 no-pad">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"
+        type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/slider/jquery.cycle.all.js" type="text/javascript"
+        charset="utf-8"></script>
+<script src="/static/js/slider/jquery.maximage.js" type="text/javascript"
+        charset="utf-8"></script>
+<script src="/static/js/client.js" type="text/javascript"
+        charset="utf-8"></script>
+<script>
+        function openMenu() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu";
+          }
+        }
+
+
+</script>
+</body>
+</html>

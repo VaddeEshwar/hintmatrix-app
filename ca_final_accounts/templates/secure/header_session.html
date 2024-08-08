@@ -1,0 +1,30 @@
+{% load static %}
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+</div>
+
+<div class="menu" id="myTopnav">
+    <nav class="navigation">
+        <ul class="menu-nav">
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">&#9776;</a>
+                <ul>
+                    <li><a href="{% url 'website:home' %}">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'website:question' %}">Questions</a>
+                    </li>
+                    <li><a href="{% url 'website:question_create' %}">Add
+                        Question</a></li>
+                    <li><a href="{% url 'website:blog' %}">Answer</a>
+                    </li>
+                    <li><a href="{% url 'website:blog' %}">Profile</a>
+                    </li>
+                    <li><a href="{% url 'website:logout' %}">Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="clearfix"></div>
+</div>

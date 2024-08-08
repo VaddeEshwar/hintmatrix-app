@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
+    <title>SimpleTips 9</title>
+
+    <meta content='CA Final Accounts Subject' name='description'/>
+    <meta content='SimpleTips 9' name='author'/>
+
+    <meta name="distribution" content="global"/>
+    <meta name="language" content="en"/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css"
+          type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/slider/jquery.maximage.css"
+          type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/slider/screen.css" type="text/css"
+          media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+{% include 'secure/header_session.html' %}
+<div class="heading">
+    <h2 class="text-center">Dashboard</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Recently Added Questions</h5>
+                    <ul class="list-group">
+                        {% for qun in recent %}
+                        <li class="list-group-item">
+                            <a href="/my-app/question/{{qun.slug}}-{{qun.name}}/">
+                                {{qun.name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p><a href="{% url 'website:question' %}"
+                          class="btn btn-primary">more...</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Most Answered Questions</h5>
+                    <ul class="list-group">
+                        {% for qun in most_answered %}
+                        <li class="list-group-item">
+                            <a href="/my-app/question/{{qun.exam__slug}}-{{qun.exam__name}}/">
+                                {{qun.exam__name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p><a class="btn btn-primary" href="#">more...</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="main-card mb-3 card">
+                <div class="card-body">
+                    <h5 class="card-title">Attempted Questions</h5>
+                    <ul class="list-group">
+                        {% for qun in most_attempted %}
+                        <li class="list-group-item">
+                            <a href="/my-app/question/{{qun.exam__slug}}-{{qun.exam__name}}/">
+                                {{qun.exam__name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <p><a class="btn btn-primary" href="#">more...</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js"
+        type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/slider/jquery.cycle.all.js" type="text/javascript"
+        charset="utf-8"></script>
+<script src="/static/js/slider/jquery.maximage.js" type="text/javascript"
+        charset="utf-8"></script>
+<script>
+function openMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+</script>
+</body>
+</html>

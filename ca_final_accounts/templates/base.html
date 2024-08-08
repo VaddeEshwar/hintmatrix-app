@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Final Accounts{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="{% static 'img/favicon.png' %}"/>
+    <link rel="SHORTCUT ICON" href="{% static 'img/favicon.png' %}"/>
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}"
+          type="image/x-icon"/>
+    {% block css %}{% endblock css %}
+    {% block css_override %}{% endblock css_override %}
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {% include "lib_config.html" %}
+    {% block inline_head_jS %}{% endblock inline_head_jS %}
+    {% block head_jS %}{% endblock head_jS %}
+</head>
+<body>
+{% if user.is_authenticated %}
+{% include "secure/header_session.html" %}
+{% else %}
+{% include "header.html" %}
+{% endif %}
+
+{% if user.is_authenticated %}
+{% block scontainer %}{% endblock scontainer %}
+{% else %}
+{% block container %}{% endblock container %}
+{% endif %}
+
+{% block body_footer %}{% endblock body_footer %}
+{% block fixed_jS %}{% endblock fixed_jS %}
+{% block asyjs %}{% endblock asyjs %}
+{% block inline_asyjs %}{% endblock inline_asyjs %}
+{% block ga_jS %}{% endblock ga_jS %}
+</body>
+</html>

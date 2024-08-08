@@ -1,0 +1,439 @@
+/*
+Website: BIEIT
+Author: inspire-themes9
+Version: 1.0
+Design and Developed by: inspire-themes9
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+h1 {
+	font-size: 54px;
+	font-weight: bold;
+	color: #121212;
+}
+h2 {
+	font-size: 45px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+}
+h4 {
+	font-size: 25px;
+	font-weight: bold;
+}
+h5 {
+	font-size: 18px;
+	font-weight: bold;
+}
+h6 {
+	font-size: 16px;
+	font-weight: bold;
+}
+h1 i,h2 i,h3 i,h4 i,h5 i,h6 i {
+	font-weight: normal;
+	font-style: normal;
+}
+
+.text-small {font-size: 14px;
+}
+.site-wrapper {
+	width: 100%;
+	margin: 0px auto;
+	background-color: #fff;
+}
+
+/* colors */
+.primary-color {
+	color: #1878f3;
+}
+.secondary-color {
+	color: #70ad45;
+}
+.tertiary-color {
+	color: #e8bf19;
+}
+.color-white {
+	color: #fff;
+}
+.color-dark {
+	color: #121212;
+}
+
+/* background colors */
+.bg-primary-color {
+	background: #1878f3;
+}
+.bg-secondary-color {
+	background: #70ad45;
+}
+.bg-tertiary-color {
+	background: #e8bf19;
+}
+.bg-white {
+	background: #fff;
+}
+.bg-dark {
+	background: #121212;
+}
+.bg-light-gray {
+	background: #f3f5fb;
+}
+.bg-light-gray2 {
+	background: #f6f8fc;
+}
+.bg-light-gray3 {
+	background: #e7ebf7;
+}
+
+.section-padding {
+	padding: 27px 0px 41px 0px;
+}
+.text-center {
+	text-align: center;
+}
+
+/* container less */
+.less1 {
+	width: 90%;
+	margin: 0px auto;
+}
+
+/* padding */
+.padding-all1 {
+	padding: 10px;
+}
+.padding-all2 {
+	padding: 20px;
+}
+.padding-all3 {
+	padding: 30px;
+}
+.padding-all4 {
+	padding: 40px;
+}
+.padding-all5 {
+	padding: 50px;
+}
+
+
+.padding-top-bot2 {
+	padding: 20px 30px;
+}
+.padding-lrtb {
+	padding: 20px 30px 27px 30px;
+}
+
+/* margins */
+.margin-b1 {
+	margin-bottom: 10px;
+}
+.margin-b2 {
+	margin-bottom: 20px;
+}
+.margin-b3 {
+	margin-bottom: 30px;
+}
+.margin-b4 {
+	margin-bottom: 40px;
+}
+.margin-b5 {
+	margin-bottom: 50px;
+}
+.margin-b6 {
+	margin-bottom: 60px;
+}
+.margin-b7 {
+	margin-bottom: 70px;
+}
+.margin-b8 {
+	margin-bottom: 80px;
+}
+.margin-b9 {
+	margin-bottom: 90px;
+}
+.margin-b10 {
+	margin-bottom: 100px;
+}
+
+.margin-l4 {
+	margin-left: 40px;
+}
+
+.margin-t1 {
+	margin-top: 10px;
+}
+.margin-t2 {
+	margin-top: 20px;
+}
+
+
+
+
+
+
+/* text links */
+.text-link-primary {
+	color: #1878f3;
+	transition: 0.3s;
+}
+.text-link-primary:hover {
+	color: #121212;
+	text-decoration: none;
+}
+.text-link-secondary {
+	color: #70ad45;
+	transition: 0.3s;
+}
+.text-link-secondary:hover {
+	color: #121212;
+	text-decoration: none;
+}
+.text-link-tertiary {
+	color: #e8bf19;
+	transition: 0.3s;
+}
+.text-link-tertiary:hover {
+	color: #121212;
+	text-decoration: none;
+}
+
+/* buttons */
+.but-primary {
+	background: #1878f3;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.but-secondary {
+	background: #70ad45;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.but-secondary:hover {
+	background: #121212;
+	color: #fff;
+	text-decoration: none;
+}
+.but-tertiary {
+	background: #e8bf19;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.3s;
+}
+.but-tertiary:hover {
+	background: #121212;
+	color: #fff;
+	text-decoration: none;
+}
+.but-white {
+	background: #fff;
+}
+.but-dark {
+	background: #121212;
+}
+
+
+
+.but-medium {
+	padding: 9px 25px;
+	border-radius: 23px;
+}
+
+
+
+
+.shadow1 {
+	box-shadow: 0px 3px 10px 0px rgba(82,89,109,0.1);
+}
+.border-radius1 {
+	border-radius: 18px;
+}
+.border-radius2 {
+	border-radius: 30px;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+}
+
+/* feature sections */
+.featured-section-1 {
+}
+.featured-section-1 a {
+	float: right;
+	margin-top: 5px;
+}
+.featured-section-1 a.none {
+	float: none;
+}
+.featured-section-1 .price {
+	font-size: 36px;
+	font-weight: bold;
+}
+.featured-section-1 .price i {
+	font-size: 32px;
+	font-weight: normal;
+	margin-right: 5px;
+}
+.featured-section-1 b {
+	font-size: 25px;
+	font-weight: normal;
+	line-height: 30px;
+	padding-right: 0px;
+}
+.featured-section-1 ul {
+	padding: 0px;
+	margin: 0px;
+}
+.featured-section-1 ul li {
+	padding: 10px 0px 10px 0px;
+	margin: 0px;
+	list-style-type: none;
+	font-size: 14px;
+}
+.featured-section-1 ul li i {
+	padding: 2px;
+	font-size: 9px;
+	border: 1px solid #121212;
+	border-radius: 30px;
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	margin-top: 5px;
+	clear: both;
+}
+
+/* table */
+.table-courses {
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 18px;
+	overflow: hidden;
+	border-top: 1px solid #fff !important;
+}
+.table-courses td {
+	width: 30%;
+	padding: 14px 30px;
+	background: #e7ebf7;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+.table-courses td:last-child {
+	width: 70%;
+	border-right: 0px solid #fff;
+}
+.table-courses th {
+	width: 30%;
+	background: #1878f3;
+	padding: 14px 30px;
+	border-right: 1px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+.table-courses th:last-child {
+	width: 70%;
+	border-right: 0px solid #fff;
+}
+.table-courses .thead-primary {
+	background: #1878f3;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 23px;
+	line-height: 30px;
+	font-weight: 600;
+}
+h4 {
+	font-size: 18px;
+}
+
+.less1 {
+	width: 90%;
+}
+
+.featured-section-1 ul li i {
+	margin-bottom: 10px;
+}
+.margin-top-respo {
+	margin-top: 30px;
+}
+.margin-top-respo2 {
+	margin-top: 60px;
+}
+
+.full-height {
+  height: auto;
+}
+.margin-l4 {
+	margin-left: auto;
+	text-align: center;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+.padding-all3 {
+	padding: 20px;
+}
+.padding-all5 {
+	padding: 30px;
+}
+.featured-section-1 ul li i {
+	margin-bottom: 30px;
+}
+
+.table-courses td {
+	width: 35%;
+}
+.table-courses td:last-child {
+	width: 65%;
+}
+.table-courses th {
+	width: 35%;
+}
+.table-courses th:last-child {
+	width: 65%;
+}
+
+
+}
+
+
+
+
+

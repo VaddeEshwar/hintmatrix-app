@@ -1,0 +1,496 @@
+[
+    {
+        "model": "config.tableattribute",
+        "pk": 10,
+        "fields": {
+            "slug": "6560f62b-c7de-4837-9bce-87b5e1f40c8e",
+            "code": "comminc-ab",
+            "name": "accrued commission",
+            "short_name": "accrued commission",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.930Z",
+            "u_on": "2021-04-10T15:40:40.930Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 11,
+        "fields": {
+            "slug": "f6218b0b-ef43-4710-9114-6fbf2ea83f66",
+            "code": "int-ab",
+            "name": "accrued interest",
+            "short_name": "accrued interest",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.936Z",
+            "u_on": "2021-04-10T15:40:40.936Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 12,
+        "fields": {
+            "slug": "96e13e07-292b-41f8-81c1-4012d42355bc",
+            "code": "rentinc-ab",
+            "name": "accrued rent",
+            "short_name": "accrued rent",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.939Z",
+            "u_on": "2021-04-10T15:40:40.939Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 13,
+        "fields": {
+            "slug": "7362f506-1b7f-4ec9-a781-f6cd546c93fa",
+            "code": "asset-aa",
+            "name": "assets",
+            "short_name": "assets",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.942Z",
+            "u_on": "2021-04-10T15:40:40.942Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 14,
+        "fields": {
+            "slug": "090eae4e-b41c-466a-9428-632e89807587",
+            "code": "cap-aa",
+            "name": "capital",
+            "short_name": "capital",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.944Z",
+            "u_on": "2021-04-10T15:40:40.944Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 15,
+        "fields": {
+            "slug": "c55f5727-6d00-4f6f-90e3-d4e37ce2859b",
+            "code": "commi-aa",
+            "name": "commission",
+            "short_name": "commission",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.947Z",
+            "u_on": "2021-04-10T15:40:40.947Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 16,
+        "fields": {
+            "slug": "e7b145bc-1e74-4d89-8634-82f2182d9264",
+            "code": "comminc-aa",
+            "name": "commission received",
+            "short_name": "commission received",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.950Z",
+            "u_on": "2021-04-10T15:40:40.950Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 17,
+        "fields": {
+            "slug": "a57f123a-9cb8-41aa-9827-41428ff276c8",
+            "code": "comminc-ac",
+            "name": "commission received in advance",
+            "short_name": "commission received in advance",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.952Z",
+            "u_on": "2021-04-10T15:40:40.952Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 18,
+        "fields": {
+            "slug": "9c3d434c-36b6-4869-a8bc-014bada43bc7",
+            "code": "deb-aa",
+            "name": "debtors",
+            "short_name": "debtors",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.954Z",
+            "u_on": "2021-04-10T15:40:40.954Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 19,
+        "fields": {
+            "slug": "cafdd236-8317-49cd-9b70-6507c77497f2",
+            "code": "de-aa",
+            "name": "direct expenses",
+            "short_name": "direct expenses",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.956Z",
+            "u_on": "2021-04-10T15:40:40.956Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 20,
+        "fields": {
+            "slug": "cd500100-34cc-425e-a2c2-3c09a50d7134",
+            "code": "cap-ad",
+            "name": "drawings (less from capital)",
+            "short_name": "drawings (less from capital)",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.959Z",
+            "u_on": "2021-04-10T15:40:40.959Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 21,
+        "fields": {
+            "slug": "5ad3a717-fb10-4fcc-b224-8d1c27d4e60a",
+            "code": "deb-ab",
+            "name": "further bad debts",
+            "short_name": "further bad debts",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.962Z",
+            "u_on": "2021-04-10T15:40:40.962Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 22,
+        "fields": {
+            "slug": "b40a8ad8-c67a-44fd-9b70-7842a0025550",
+            "code": "ide-aa",
+            "name": "indirect expenses",
+            "short_name": "indirect expenses",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.964Z",
+            "u_on": "2021-04-10T15:40:40.964Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 23,
+        "fields": {
+            "slug": "ef318306-7c9e-4e88-b086-4f38a9f5bc9d",
+            "code": "cap-ae",
+            "name": "interest on capital",
+            "short_name": "interest on capital",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.967Z",
+            "u_on": "2021-04-10T15:40:40.967Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 24,
+        "fields": {
+            "slug": "87a5be29-1ff9-47c4-abe1-a7432bcf8b8d",
+            "code": "cap-af",
+            "name": "interest on drawings",
+            "short_name": "interest on drawings",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.970Z",
+            "u_on": "2021-04-10T15:40:40.970Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 25,
+        "fields": {
+            "slug": "d7f25269-8a83-49b9-81e8-73e05d536dbf",
+            "code": "int-aa",
+            "name": "interest received",
+            "short_name": "interest received",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.972Z",
+            "u_on": "2021-04-10T15:40:40.972Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 26,
+        "fields": {
+            "slug": "2c2743b5-1eaa-4c0d-8f6b-48f6cd45c57c",
+            "code": "int-ac",
+            "name": "interest received in advance",
+            "short_name": "interest received in advance",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.974Z",
+            "u_on": "2021-04-10T15:40:40.974Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 27,
+        "fields": {
+            "slug": "2d91d329-c457-417b-87e3-1d0a493442ca",
+            "code": "liab-aa",
+            "name": "liability",
+            "short_name": "liability",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.976Z",
+            "u_on": "2021-04-10T15:40:40.976Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 28,
+        "fields": {
+            "slug": "0b56f2e8-1633-4a01-b77e-13a3235079e1",
+            "code": "cap-ac",
+            "name": "net loss (less from capital)",
+            "short_name": "net loss (less from capital)",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.979Z",
+            "u_on": "2021-04-10T15:40:40.979Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 29,
+        "fields": {
+            "slug": "bf63fd51-4b8d-41f4-9b31-8b3b10cffee9",
+            "code": "cap-ab",
+            "name": "net profit (add to capital)",
+            "short_name": "net profit (add to capital)",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.982Z",
+            "u_on": "2021-04-10T15:40:40.982Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 30,
+        "fields": {
+            "slug": "47e60feb-5484-4568-83f0-0e822fe4b824",
+            "code": "oti-aa",
+            "name": "other income",
+            "short_name": "other income",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.984Z",
+            "u_on": "2021-04-10T15:40:40.984Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 31,
+        "fields": {
+            "slug": "456f743e-5cd6-48b2-8b9a-35b8c843dde5",
+            "code": "commi-ab",
+            "name": "outstanding commission",
+            "short_name": "outstanding commission",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.987Z",
+            "u_on": "2021-04-10T15:40:40.987Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 32,
+        "fields": {
+            "slug": "4728bc69-25e6-4968-9f26-8436b63fef41",
+            "code": "rent-ab",
+            "name": "outstanding rent",
+            "short_name": "outstanding rent",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.989Z",
+            "u_on": "2021-04-10T15:40:40.989Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 33,
+        "fields": {
+            "slug": "7f7170b8-2449-48f8-b434-6c137abbf4f5",
+            "code": "salaries-ab",
+            "name": "outstanding salaries",
+            "short_name": "outstanding salaries",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.991Z",
+            "u_on": "2021-04-10T15:40:40.991Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 34,
+        "fields": {
+            "slug": "d2d444d2-7481-4175-94d0-92be18a89ada",
+            "code": "wages-ab",
+            "name": "outstanding wages",
+            "short_name": "outstanding wages",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.994Z",
+            "u_on": "2021-04-10T15:40:40.994Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 35,
+        "fields": {
+            "slug": "e2a0d1e4-ec4c-4853-a3ba-ad290bb29c68",
+            "code": "commi-ac",
+            "name": "prepaid commission",
+            "short_name": "prepaid commission",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.996Z",
+            "u_on": "2021-04-10T15:40:40.996Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 36,
+        "fields": {
+            "slug": "86c24cd4-514c-41cd-92c2-3c39a0fac9b7",
+            "code": "rent-ac",
+            "name": "prepaid rent",
+            "short_name": "prepaid rent",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:40.999Z",
+            "u_on": "2021-04-10T15:40:40.999Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 37,
+        "fields": {
+            "slug": "52684e9c-3211-4f3e-89be-885ed0e0740b",
+            "code": "salaries-ac",
+            "name": "prepaid salaries",
+            "short_name": "prepaid salaries",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.002Z",
+            "u_on": "2021-04-10T15:40:41.002Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 38,
+        "fields": {
+            "slug": "2688976b-0081-49b4-b0fa-9173aa7d721d",
+            "code": "wages-ac",
+            "name": "prepaid wages",
+            "short_name": "prepaid wages",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.004Z",
+            "u_on": "2021-04-10T15:40:41.004Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 39,
+        "fields": {
+            "slug": "a1a4d75e-9f0d-4a31-b6a8-e335f51ee4b8",
+            "code": "pur-ab",
+            "name": "purchase returns",
+            "short_name": "purchase returns",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.006Z",
+            "u_on": "2021-04-10T15:40:41.006Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 40,
+        "fields": {
+            "slug": "fda6b209-4dc3-49b9-9280-a03a9ea2c99f",
+            "code": "pur-aa",
+            "name": "purchases",
+            "short_name": "purchases",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.008Z",
+            "u_on": "2021-04-10T15:40:41.008Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 41,
+        "fields": {
+            "slug": "1fe86cb1-6540-41e4-8d8f-495379899466",
+            "code": "rent-aa",
+            "name": "rent",
+            "short_name": "rent",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.011Z",
+            "u_on": "2021-04-10T15:40:41.011Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 42,
+        "fields": {
+            "slug": "2754c377-8680-4e70-9e98-b655da6d141b",
+            "code": "rentinc-aa",
+            "name": "rent received",
+            "short_name": "rent received",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.014Z",
+            "u_on": "2021-04-10T15:40:41.014Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 43,
+        "fields": {
+            "slug": "de6000ca-af57-4d5c-a2b9-e8e1ecd7b731",
+            "code": "rentinc-ac",
+            "name": "rent received in advance",
+            "short_name": "rent received in advance",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.015Z",
+            "u_on": "2021-04-10T15:40:41.016Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 44,
+        "fields": {
+            "slug": "6a5c2865-cb2e-45e9-b4a0-ee7a1ff3ee66",
+            "code": "salaries-aa",
+            "name": "salaries",
+            "short_name": "salaries",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.018Z",
+            "u_on": "2021-04-10T15:40:41.018Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 45,
+        "fields": {
+            "slug": "58a482b6-b196-4e8f-a80a-0494c0035071",
+            "code": "sales-aa",
+            "name": "sales",
+            "short_name": "sales",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.020Z",
+            "u_on": "2021-04-10T15:40:41.021Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 46,
+        "fields": {
+            "slug": "e2471753-489f-4c0a-ac1e-520d85f95aa0",
+            "code": "sales-ab",
+            "name": "sales returns",
+            "short_name": "sales returns",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.024Z",
+            "u_on": "2021-04-10T15:40:41.024Z"
+        }
+    },
+    {
+        "model": "config.tableattribute",
+        "pk": 47,
+        "fields": {
+            "slug": "fade66ee-1f10-4091-84f5-ec570c0757d0",
+            "code": "wages-aa",
+            "name": "wages",
+            "short_name": "wages",
+            "is_active": true,
+            "c_on": "2021-04-10T15:40:41.027Z",
+            "u_on": "2021-04-10T15:40:41.027Z"
+        }
+    }
+]

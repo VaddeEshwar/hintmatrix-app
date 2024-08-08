@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/img/favicon.png" rel="SHORTCUT ICON"/>
+    <title>{{question.name}}</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="/static/css/main.css" rel="stylesheet"/>
+    <link href="/static/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+{% include 'secure/header_session.html' %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="heading">
+                <h2 class="text-center">Answer</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-right align">
+            <h3 class="text-left">{{question.name}}</h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-card mb-1 card">
+                <div class="question-body">
+                    <div class="row">
+                        <div class="col-sm-12 headings headings-answer"
+                             style="background:none;">
+                            <div class="col-sm-6 no-pad">
+                                <div class="debit-wrapper-heading row no-mar">
+                                    <div class="col-sm-4 col-xs-4 no-pad"><span>Debit Balance</span>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad"><span>Operation</span>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad"><span>Amount</span>
+                                    </div>
+                                </div>
+                                {% for d1 in debit_balance %}
+                                <div class="debit-wrapper-body row values no-mar">
+                                    <div class="col-sm-4 col-xs-4 no-pad"
+                                         data-id="{{d1.slug}}">
+                                        <div class="form-field">{{d1.attribute}}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad">
+                                        <div class="form-field">
+                                            <select class="cls_cp_action"
+                                                    data-attr-value="{{d1.attribute_id}}"
+                                                    name="sel_cp_attribute">
+                                                <option>-Select-</option>
+                                                {% for row in sel_option_list%}
+                                                <option value="{{row.value}}">
+                                                    {{row.name}}
+                                                </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad">
+                                        <div class="form-field">{{d1.amount}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <div class="col-sm-6 no-pad">
+                                <div class="debit-wrapper-heading credit-wrapper-heading row no-mar">
+                                    <div class="col-sm-4 col-xs-4 no-pad"><span>Credit Balance</span>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad"><span>Operation</span>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad"><span>Amount</span>
+                                    </div>
+                                </div>
+                                {% for d1 in credit_balance %}
+                                <div class="debit-wrapper-body credit-wrapper-body row values no-mar">
+                                    <div class="col-sm-4 col-xs-4 no-pad"
+                                         data-id="{{d1.slug}}">
+                                        <div class="form-field">{{d1.attribute}}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad">
+                                        <div class="form-field">
+                                            <select class="cls_cp_action"
+                                                    data-attr-value="{{d1.attribute_id}}"
+                                                    name="sel_cp_attribute">
+                                                <option>-Select-</option>
+                                                {% for row in sel_option_list%}
+                                                <option value="{{row.value}}">
+                                                    {{row.name}}
+                                                </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 no-pad">
+                                        <div class="form-field">{{d1.amount}}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="id_answer" class="disable">
+    <div id="id_tbl_trading">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-right align">
+                    <h3 class="text-left">TRADING ACCOUNT</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <div class="col-sm-6 no-pad align">
+                        <h3 class="text-left">DR</h3>
+                    </div>
+                    <div class="col-sm-6 no-pad align">
+                        <h3 class="text-left">CR</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 headings">
+                    <div class="col-sm-6 no-pad">
+                        <div class="debit-wrapper-heading row no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>
+                                Particulars</span></div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <span>Amount (&#8377;)</span></div>
+                        </div>
+                        <div id="id_tbl_trading_dr"></div>
+                        <div class="debit-wrapper-body row values no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field">Total</div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field"
+                                     id="id_td_tot_trading_dr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 no-pad">
+                        <div class="debit-wrapper-heading row no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>
+                                Particulars</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>Amount (&#8377;)</span>
+                            </div>
+                        </div>
+                        <div id="id_tbl_trading_cr"></div>
+                        <div class="debit-wrapper-body row values no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field">Total</div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field" id="id_td_tot_trading_cr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div id="id_tbl_balance">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-right align">
+                    <h3 class="text-left">Balance Sheet</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <div class="col-sm-6 no-pad align">
+                        <h3 class="text-left">DR</h3>
+                    </div>
+                    <div class="col-sm-6 no-pad align">
+                        <h3 class="text-left">CR</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 headings">
+                    <div class="col-sm-6 no-pad">
+                        <div class="debit-wrapper-heading row no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>
+                                Particulars</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>Amount (&#8377;)</span>
+                            </div>
+                        </div>
+                        <div id="id_tbl_balance_dr"></div>
+                        <div class="debit-wrapper-body row values no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field">Total</div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field"
+                                     id="id_td_tot_balance_dr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 no-pad">
+                        <div class="debit-wrapper-heading row no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>
+                                Particulars</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>Amount (&#8377;)</span>
+                            </div>
+                        </div>
+                        <div id="id_tbl_balance_cr"></div>
+                        <div class="debit-wrapper-body row values no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field">Total</div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field" id="id_td_tot_balance_cr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+    <div id="id_tbl_profit">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-right align">
+                    <h3 class="text-left">Profit &amp; Loss</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <div class="col-sm-6 no-pad align">
+                        <h3 class="text-left">DR</h3>
+                    </div>
+                    <div class="col-sm-6 no-pad align">
+                        <h3 class="text-left">CR</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 headings">
+                    <div class="col-sm-6 no-pad">
+                        <div class="debit-wrapper-heading row no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>
+                                Particulars</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>Amount (&#8377;)</span>
+                            </div>
+                        </div>
+                        <div id="id_tbl_profit_dr"></div>
+                        <div class="debit-wrapper-body row values no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field">Total</div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field" id="id_td_tot_profit_dr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 no-pad">
+                        <div class="debit-wrapper-heading row no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>
+                                Particulars</span>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad"><span>Amount (&#8377;)</span>
+                            </div>
+                        </div>
+                        <div id="id_tbl_profit_cr"></div>
+                        <div class="debit-wrapper-body row values no-mar">
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field">Total</div>
+                            </div>
+                            <div class="col-sm-6 col-xs-6 no-pad">
+                                <div class="form-field" id="id_td_tot_profit_cr">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/client.js"></script>
+{%csrf_token%}
+<script>
+function openMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% extends "v1/secure/layout_session.html" %}
+{% block sContainer %}
+<div class="content-wrapper">
+    <h2 class="text-center padding-bottom">Create Question</h2>
+    <form action="#" class="cls_add_question" method="post"
+          onsubmit="return false;">
+        <div>
+            <h3 class="text-primary">Enter the Question</h3>
+            <textarea class="inp-textarea" maxlength="120"
+                      minlength="10" name="title" required="required"
+                      placeholder="Text here" rows="2"></textarea>
+        </div>
+        <table class="table-one" id="myTable">
+            <tbody>
+            <tr>
+                <td class="brs-left"><h5>DEBIT BALANCE</h5></td>
+                <td class="bg-primary-light"><h5>AMOUNT</h5></td>
+                <td class="bg-primary-light"><h5>CREDIT BALANCE</h5>
+                </td>
+                <td class="brs-right"><h5>AMOUNT</h5></td>
+            </tr>
+            <tr>
+                <td class="one">
+                    <select class="select-one sel_attr"
+                            name="dr_attr_code" required="required">
+                        <option value="0">-- Please choose an option --
+                        </option>
+                    </select>
+                </td>
+                <td class="two">
+                    <input class="inp-num" min="0" name="dr_amount"
+                           type="number"/>
+                </td>
+                <td class="three">
+                    <select class="select-one sel_attr"
+                            name="cr_attr_code"
+                            required="required">
+                        <option value="0">-- Please choose an option
+                            --
+                        </option>
+                    </select>
+                </td>
+                <td class="four">
+                    <input class="inp-num" min="0" name="cr_amount"
+                           type="number">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="addthis but-gray margin-top-3" type="button">Add
+            Row
+        </button> &nbsp;&nbsp;
+        <button class="but-primary margin-top-3" type="submit">Save
+            Question
+        </button>
+    </form>
+</div>
+
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+<div class="clearfix padding-top"></div>
+{% endblock sContainer %}
+
+{% block inline_asyjs %}
+<script>populate_attributes();</script>
+{% endblock inline_asyjs %}

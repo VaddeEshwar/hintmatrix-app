@@ -1,0 +1,61 @@
+{% extends "v1/layout_extended.html" %}
+{% load static %}
+{% block css %}
+<link href="{% static 'js/v1/slider/slider.css' %}" rel="stylesheet"
+      type="text/css"/>
+<link href="{% static 'css/v1/default.css' %}" rel="stylesheet"
+      type="text/css"/>
+<link href="{% static 'css/v1/yBox.min.css' %}" rel="stylesheet"
+      type="text/css"/>
+{% endblock css %}
+{% block container %}
+<section>
+    <div class="slideshow example-1">
+        <div>
+            <img alt="" src="{% static 'img/v1/slider-img-1.jpg' %}"/>
+            <div class="dark-overlay">
+                <div class="slider-graph"></div>
+                <div class="text_content">
+                    <h3>We provide timely &</h3>
+                    <h1>Accurate Billing <br/> Information</h1>
+                    <!--                    <a class="slider-but-1 uppercase" href="#">Know-->
+                    <!--                        More</a>-->
+                </div>
+            </div>
+        </div>
+        <div>
+            <img alt="" src="{% static 'img/v1/slider-img-2.jpg' %}"/>
+            <div class="dark-overlay">
+                <div class="slider-graph"></div>
+                <div class="text_content">
+                    <h3>Learn and Improve</h3>
+                    <h1>Your Skills at<br/> Accounting</h1>
+                    <!--                    <a class="slider-but-1 uppercase" href="#">Know-->
+                    <!--                        More</a>-->
+                </div>
+            </div>
+        </div>
+        <div>
+            <img alt="" src="{% static 'img/v1/slider-img-3.jpg' %}"/>
+            <div class="dark-overlay">
+                <div class="slider-graph"></div>
+                <div class="text_content">
+                    <h3>We are financial advisory for</h3>
+                    <h1>Better Businesses <br/> by joyful ideas</h1>
+                    <!--                    <a class="slider-but-1 uppercase" href="#">Know-->
+                    <!--                        More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock container %}
+
+{% block fixed_jS %}
+<script src="{% static 'js/v1/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/v1/slider/slider.js' %}"></script>
+<script src="{% static 'js/v1/yBox.min.js' %}"
+        type="text/javascript"></script>
+<script src="{% static 'js/v1/client.js' %}"
+        type="text/javascript"></script>
+{% endblock fixed_jS %}

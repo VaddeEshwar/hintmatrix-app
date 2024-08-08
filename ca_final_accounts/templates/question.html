@@ -1,0 +1,11 @@
+{% extends "layout_extended.html" %}
+{% load static %}
+
+{% block container %}
+<h1>Question</h1>
+<ul>
+    {% for qun in questions %}
+    <li><a href="/question/{{qun.chapter.code}}/{{qun.slug}}/{{qun.name}}/">{{qun.name}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock container %}

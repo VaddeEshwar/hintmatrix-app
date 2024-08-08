@@ -1,0 +1,27 @@
+{% extends "v1/layout_extended.html" %}
+{% load static %}
+{% block css %}
+<link href="{% static 'css/v1/yBox.min.css' %}" rel="stylesheet"
+      type="text/css"/>
+<link href="{% static 'css/v1/default.css' %}" rel="stylesheet"
+      type="text/css"/>
+{% endblock css %}
+
+{% block fixed_jS %}
+<script src="{% static 'js/v1/jquery-3.6.0.min.js' %}"
+        type="text/javascript"></script>
+<script src="{% static 'js/v1/yBox.min.js' %}"
+        type="text/javascript"></script>
+
+<script src="{% static 'js/v1/utils.js' %}"
+        type="text/javascript"></script>
+<script src="{% static 'js/v1/fin_tip.js' %}"
+        type="text/javascript"></script>
+<script src="{% static 'js/v1/custom.js' %}"
+        type="text/javascript"></script>
+<script src="{% static 'js/v1/client.js' %}"
+        type="text/javascript"></script>
+{% endblock fixed_jS %}
+{% block container %}
+<script>top.window.location='/login/?a=i1';</script>
+{% endblock container %}

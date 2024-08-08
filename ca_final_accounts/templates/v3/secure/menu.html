@@ -1,0 +1,69 @@
+{% load static %}
+<!-- header area start -->
+<div class="container">
+  <div class="wrapper">
+    <a class="logo" href="{% url 'website_v2:my-course'%}" title="hintMatrix">
+      <img alt="hintMatrix" src="{% static 'img/v3/logo.png'%}" />
+    </a>
+    <a class="nav-toggle">
+      <span class="toggle"></span>
+      <span class="toggle"></span>
+      <span class="toggle"></span>
+    </a>
+  </div>
+  <!-- end logo -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="{% url 'website_v2:my-course'%}">My Courses</a>
+      </li>
+      <li
+        class="nav-item"
+        title="It contains details of all mistakes of practiced questions in chapter wise folders."
+      >
+        <a href="/my-app/logs/">Errors List</a>
+      </li>
+      {% if request.user.is_superuser %}
+      <li class="nav-item">
+        <a href="{% url 'website_v2:chapter-create-question' %}">Create</a>
+      </li>
+      {% endif %}
+      <li class="nav-item" title="logout">
+        <a href="{% url 'website_v2:course-subscribe-1' %}">subscribe</a>
+      </li>
+      <li class="nav-item" title="profile">
+        <a href="{% url 'website_v2:my-profile' %}">profile</a>
+      </li>
+      <li class="nav-item" title="logout">
+        <a href="{% url 'website_v2:logout' %}">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- end navigation -->
+</div>
+
+<div class="container" style="padding-right: 25px">
+  {{question.chapter.course.name}} >>
+  <a href="{% url 'website_v2:chapter-wise-category' question.chapter.code%}">
+    {{question.chapter}}</a>
+  >>
+  <a
+    href="{% url 'website_v2:chapter-wise-question' question.chapter.code question.question_category.code %}">
+    {{question.question_category.name}}</a>
+  <div class="text-right popup cls_show_marks" id="id_show_marks">
+    Marks Secured:
+    <span>{{request.user.profile.total_user_marks|floatformat:2}}</span>
+    <div class="popuptext" id="id_show_table">
+      <table>
+        <tbody>
+          {% for itm in request.user.profile.chapter_wise_user_marks %}
+          <tr>
+            <td>{{itm.0}}</td>
+            <td>{{itm.1}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

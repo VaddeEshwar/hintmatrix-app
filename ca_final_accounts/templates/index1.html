@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js' lang='en'>
+<!--<![endif]-->
+<head>
+    <meta charset='utf-8'/>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
+    <title>SimpleTips 9</title>
+
+    <meta content='CA Final Accounts Subject' name='description'/>
+    <meta content='SimpleTips 9' name='author'/>
+
+    <meta name="distribution" content="global"/>
+    <meta name="language" content="en"/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+
+    <link rel="stylesheet" href="/static/css/slider/jquery.maximage.css"
+          type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/slider/screen.css" type="text/css"
+          media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css"/>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style type="text/css" media="screen">
+			#maximage {
+/*				position:fixed !important;*/
+			}
+			
+			/*Set my logo in bottom left*/
+			#logo {
+				bottom:30px;
+				height:auto;
+				left:30px;
+				position:absolute;
+				width:34%;
+				z-index:1000;
+			}
+			#logo img {
+				width:100%;
+			}
+
+			#arrow_left, #arrow_right {
+				bottom:30px;
+				height:67px;
+				position:absolute;
+				right:30px;
+				width:36px;
+				z-index:1000;
+			}
+			#arrow_left {
+				right:86px;
+			}
+
+			#arrow_left:hover, #arrow_right:hover {
+				bottom:29px;
+			}
+			#arrow_left:active, #arrow_right:active {
+				bottom:28px;
+			}
+    </style>
+    <!--[if IE 6]>
+    <style type="text/css" media="screen">
+				/*I don't feel like messing with pngs for this browser... sorry*/
+				#gradient {display:none;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+<div class="menu" id="myTopnav">
+    <nav class="navigation">
+        <ul class="menu-nav">
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">&#9776;</a>
+                <ul><!-- Inner menu-->
+                    <li><a href="{% url 'website:n-question' %}">Questions</a>
+                    </li>
+                    <li><a href="{% url 'website:blog' %}">Blog</a></li>
+                    <li><a href="{% url 'website:articleship' %}">ArticleShip</a>
+                    </li>
+                    <li><a href="{% url 'website:login' %}">Login</a>
+                    </li>
+                    <li><a href="{% url 'website:signup' %}">Sign Up</a>
+                    </li>
+                </ul>
+            </li>
+        </ul><!-- .menu -->
+    </nav><!-- .navigation -->
+    <div class="clearfix"></div>
+</div>
+<div class="carousel">
+    <a href="/" id="logo"><img src="/static/img/slider/logo.png"
+                               alt="slideshows"/></a>
+    <a href="" id="arrow_left"><img src="/static/img/slider/arrow_left.png"
+                                    alt="Slide Left"/></a>
+    <a href="" id="arrow_right"><img src="/static/img/slider/arrow_right.png"
+                                     alt="Slide Right"/></a>
+
+    <div id="maximage">
+        <img src="/static/img/slider/wall_portrait.jpg" alt="" width="1400"
+             height="1050"/>
+        <img src="/static/img/slider/coalesse.jpg" alt="Coalesse" width="1400"
+             height="1050"/>
+        <img src="/static/img/slider/laughing.jpg" alt="" width="1400"
+             height="1050"/>
+        <img src="/static/img/slider/roof_shooting.jpg" alt="" width="2048"
+             height="1536"/>
+        <img src="/static/img/slider/man.jpg" alt="" width="2048" height="1536"/>
+        <img src="/static/img/slider/coffee_shop.jpg" alt="" width="2048"
+             height="1536"/>
+        <img src="/static/img/slider/gas_station.jpg" width="2048" height="1536"
+             alt="Gas Station">
+        <img src="/static/img/slider/golf_sunset.jpg" width="2048" height="1536"
+             alt="Golf Sunset">
+        <img src="/static/img/slider/oldladyb.jpg" width="1166" height="1400"
+             alt="Oldladyb">
+        <img src="/static/img/slider/oldmanb.jpg" width="1422" height="1800"
+             alt="Oldmanb">
+        <img src="/static/img/slider/oldmantatoo.jpg" width="800" height="1200"
+             alt="Oldmantatoo">
+        <img src="/static/img/slider/pattern.jpg" width="2048" height="1536"
+             alt="Pattern">
+        <img src="/static/img/slider/tajik_man.jpg" width="1300" height="871"
+             alt="Tajik Man">
+    </div>
+</div>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+<script src="/static/js/slider/jquery.cycle.all.js" type="text/javascript"
+        charset="utf-8"></script>
+<script src="/static/js/slider/jquery.maximage.js" type="text/javascript"
+        charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+			$(function(){
+				// Trigger maximage
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+						timeout: 0,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 1,
+						after: function(last,current){
+							// console.log($(current).find('.light-text').html());
+						}
+					}
+				});
+			});
+			function openMenu() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "menu") {
+				x.className += " responsive";
+			  } else {
+				x.className = "menu";
+			  }
+			}
+
+</script>
+</body>
+</html>

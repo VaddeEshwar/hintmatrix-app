@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1"
+          name="viewport">
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <title>hintMatrix</title>
+
+    <!-- CSS -->
+    <link href="css/default.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="site-wrapper">
+
+    <!-- header area start -->
+    <header class="head">
+        <a class="logo" href="#" title=""><img alt=""
+                                               src="images/logo.png"/></a>
+    </header>
+    <!-- header area end -->
+
+    <!-- section start -->
+    <section class="box-one big">
+        <div class="bor-cont text-center">
+            <h2>Enter code received</h2>
+            <div class="text-small text-center padding-bottom-3">We sent
+                a OTP code to your email.
+            </div>
+            <form id="#" type="POST">
+                <label class="none">
+                    <input id="email" name="email"
+                           onBlur="if (this.value == '') {this.value = 'Enter OTP';}"
+                           onFocus="if(this.value == 'Enter OTP') {this.value = '';}"
+                           type="email" value="Enter OTP">
+                </label>
+                <div class="clearfix padding-top-3"></div>
+                <button class="but-forms" type="submit">Verify OTP
+                </button>
+            </form>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- section end -->
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% extends "v1/layout_extended.html" %}
+{% load static %}
+
+{% block container %}
+<section class="box-one">
+    <div class="bor-cont">
+        <h2 class="text-center padding-bottom">Login</h2>
+        <form class="cls_frm_login" method="POST"
+              onsubmit="return false;">
+            {%csrf_token%}
+            <strong>Email:</strong>
+            <label>
+                <input autocomplete="off" id="email"
+                       name="username" placeholder="Enter email"
+                       required="required" type="email"/>
+            </label>
+            <div class="clearfix padding"></div>
+            <strong>Password:</strong>
+            <label>
+                <input autocomplete="off" id="password"
+                       name="password" placeholder="Enter password"
+                       required="required" type="password"/>
+            </label>
+            <div class="clearfix padding-top-3"></div>
+            <strong></strong>
+            <button class="but-forms" type="submit">Sign In</button>
+            <div class="clearfix padding-top-3"></div>
+            <strong></strong>
+            <a class="link-primary" href="#">
+                <img alt="" src="{% static 'img/v1/arrow-1.png' %}"/>
+                Forgot Password</a> |
+            <a class="link-primary" href="#">
+                <img alt="" src="{% static 'img/v1//arrow-1.png' %}"/>
+                Create Account
+            </a>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</section>
+{% endblock container %}

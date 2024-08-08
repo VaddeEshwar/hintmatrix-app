@@ -1,0 +1,653 @@
+/*Header*/
+header{
+    padding:5px 10px;
+    background: #0095e8;
+}
+.logo{
+    width: 120px;
+    text-align: center;
+}
+h1{
+    color:#fff;
+    display: inline;
+}
+h2{
+    font-size: 22px;
+}
+span.sub-title{
+    display: inline-block;
+    font-size: 18px;
+}
+
+/*Menu Bar*/
+.burger-menu{
+    display: inline-block;
+    cursor: pointer;
+    margin-top:15px;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media (min-width: 640px) and (max-width:991px) {
+    .container{
+        max-width: 100% !important;
+    }
+    .not-supporting{
+        display: none;
+    }
+    label.icon.cf-login.cf-login-btn {
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 100%;
+    }
+    .heading h2{
+        font-size:26px;
+    }
+    div > button{
+        width: 100%;
+    }
+    .align a{
+        min-width: 100%;
+    }
+    .wrapper > h3{
+        border-bottom: 1px solid #858585;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    .align > h3{
+        font-size: 12px !important;
+        color: #fff !important;
+        margin-bottom: 5px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    .align > div > h3{
+        color: #858585;
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    .tile{
+        width: 64px;
+        height: 64px;
+        float: left;
+        padding-right: 5px;
+        margin-right: 15px;
+        border: 1px solid #eee;
+        text-align: center;
+        background: #428bca;
+        margin-bottom: 15px;
+    }
+
+    .deb-drag-box div.particular, .cre-drag-box div.particular, .deb-drag-box div.amount, .cre-drag-box div.amount{
+        color: #fff;
+        text-align: center;
+        white-space: inherit;
+        font-size: 12px;
+        padding: 5px 0;
+        text-transform: lowercase;
+        white-space: inherit;
+        border-bottom: 1px solid #fff;
+    }
+    .deb-drag-box div.amount, .cre-drag-box div.amount{
+        border: none;
+    }
+}
+@media (max-width:640px){
+    .container{
+        max-width: 100% !important;
+    }
+    .carousel-inner>.item{
+        height: 200px !important;
+    }
+    .sidenav a{
+        font-size: 16px;
+    }
+    .table-responsive{
+        display: none;
+    }
+    .not-supporting{
+        display: block;
+    }
+    #myCarousel{
+        display: none;
+    }
+    
+    .services a span{
+        font-size: 16px !important;
+        width: 100px;
+        height: 80px;
+    }
+    .align {
+        line-height: inherit !important;
+    }
+    .wrapper {
+    }
+    .tile{
+        width: 64px;
+        height: 64px;
+        float: left;
+        padding-right: 0;
+        margin: 0;
+        border: 1px solid #eee;
+        text-align: center;
+        background: #428bca;
+    }
+    .cre-drag-box, .deb-drag-box {
+        padding: 0 5px;
+    }
+    .deb-drag-box div.particular, .cre-drag-box div.particular, .deb-drag-box div.amount, .cre-drag-box div.amount{
+        color: #fff;
+        text-align: center;
+        white-space: inherit;
+        font-size: 12px;
+        line-height: 14px;
+        padding: 3px 0;
+        text-transform: lowercase;
+        white-space: inherit;
+        border-bottom: 1px solid #fff;
+    }
+    .deb-drag-box div.amount, .cre-drag-box div.amount{
+        border:none;
+    }
+    .heading h2{
+        font-size:26px;
+    }
+    div > button{
+        width: 100%;
+    }
+    .align a{
+        min-width: 100%;
+    }
+    .wrapper > h3{
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        background: #9c27b0;
+        color: #fff;
+    }
+    .align > h3{
+        font-size: 12px;
+        color: #fff;
+    }
+    .align > div > h3{
+        color: #858585;
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+}
+
+@media (min-width:991px){
+    .not-supporting{
+        display: none;
+    }
+    .tile{
+        padding-right: 5px;
+        margin: 0;
+        border: 1px solid #eee;
+        text-align: center;
+        background: #428bca;
+        margin-bottom: 5px;
+    }
+    .deb-drag-box div.particular, .cre-drag-box div.particular, .deb-drag-box div.amount, .cre-drag-box div.amount{
+        color: #fff;
+        text-align: center;
+        white-space: inherit;
+        font-size: 14px;
+        padding: 5px 0;
+        text-transform: lowercase;
+        white-space: inherit;
+        border-bottom: 1px solid #fff;
+    }
+    .deb-drag-box div.amount, .cre-drag-box div.amount{
+        border:none;
+    }
+    .align > div > h3 {
+        margin-top: 15px;
+        font-size:14px;
+    }
+}
+#main-content h2{
+    font-size: 18px;
+}
+#main-content h3{
+    font-size: 14px;
+}
+.align a{
+    min-width: 120px;
+    margin-bottom: 10px;
+}
+.align > h3{
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.wrapper > h3{
+    color: #fff;
+    background: #9c27b0;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+}
+textarea{
+    min-width: 100%;
+    margin-bottom: 15px;
+}
+.table-responsive{
+    border:0;
+}
+table.table {
+    border-radius: 10px;
+}
+
+table.table>tbody>tr>td, td {
+    border: none;
+    padding: 0;
+}
+
+table.table th, table.table td {
+    border: none;
+    background: #07a;
+    color: #fff;
+    padding: 10px !important;
+}
+table.table td {
+    background: none;
+    color: #000;
+}
+table.table tfoot th{
+    background: none;
+}
+/* */
+.table-curved {
+    border-collapse: separate;
+}
+.table-curved {
+    border: solid #ccc 1px;
+    border-radius: 6px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.table-curved th {
+    border-top: none;
+}
+.table-curved th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved th:only-child{
+    border-radius: 6px 6px 0 0;
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+.table-curved th:only-child a{
+    width: 100px;
+}
+.table-curved tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+/* .q-details .table-curved tr:last-child td:first-child, .q-details .table-curved tr:last-child td:last-child {
+    padding: 0 !important;
+} */
+.table-curved tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+table.table-curved td{
+    padding: 10px 5px !important;
+}
+.carousel-inner>.item{
+    height: 450px;
+}
+
+/* Services */
+.services {
+    margin-top:30px;
+}
+.services a{
+    width: 100%;
+	display: inline-block;
+	box-sizing: border-box;		
+	padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.services a span{
+    line-height: 100px;
+    font-size: 24px;
+}
+.title {
+    margin-top: 0px;
+}
+.purple, .blue, .red, .orange {
+    color: #fff;
+}
+.purple{
+    background: #5133AB;
+}
+.blue{
+    background: #2672EC;
+}
+.red{
+    background: #AC193D;
+}
+.orange{
+    background: #DC572E;
+}
+.purple:hover, .blue:hover, .red:hover, .orange:hover{
+    opacity: 0.9;
+    text-decoration: none;
+    color:#fff
+}
+.save-button-holder button{
+    min-width: 100px;
+    text-align: center;
+    float: right;
+}
+.wrapper{
+    overflow: hidden;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+.text-white{
+    color: #fff;
+    text-decoration:underline;
+}
+.cre-drop-box, .deb-drop-box{
+    width: 100%;
+    border:1px solid #ccc;
+    text-align: center;
+    background: #fdfdd2;
+}
+.cre-drop-box span, .deb-drop-box span{
+    line-height: 32px;
+    font-size: 12px;
+}
+.cre-drop-box .credit{
+    border-bottom:1px solid #ccc;
+}
+.deb-drop-box .debit{
+    border-top: 1px solid #ccc;
+}
+.cre-drop-box .add, .deb-drop-box .add{
+    border-right: 1px solid #ccc;
+}
+.cre-drop-box .minus, .deb-drop-box .minus{
+    border-right:0;
+}
+.cre-drop-box .add span, .deb-drop-box .add span{
+    line-height: 32px;
+}
+.no-pad{
+    padding:0 !important;
+}
+.no-pad-left{
+    padding-left: 0;
+}
+.no-pad-right{
+    padding-right: 0;
+}
+.mar-bottom{
+    margin-bottom: 10px;
+}
+/* Navigation */
+.menu{
+    background: transparent;
+    position:fixed;
+    width: 100%;
+    height: 10%;
+    top:0;
+    z-index: 5;
+}
+.menu .navigation ul.menu-nav{
+    margin:0;
+    text-align: right;
+    padding: 10px;
+}
+.menu .navigation ul.menu-nav li a.icon{
+    text-decoration: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    background: #000;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.menu .navigation ul.menu-nav li ul{
+    display: none;
+}
+.menu.responsive .navigation ul.menu-nav li ul {
+    display: block;
+    width: 120px;
+    position: absolute;
+    right: 10px;
+    list-style: none;
+    text-align: left;
+    top: 35px;
+    background: #000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.menu.responsive .navigation ul.menu-nav li ul li {
+    line-height: 24px;
+}
+.menu.responsive .navigation ul.menu-nav li ul li a {
+    font-size: 14px;
+    color:#fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+}
+.menu.responsive .navigation ul.menu-nav li ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+.menu.responsive .navigation ul.menu-nav li ul li a:last-child{
+    border: none;
+}
+
+/* Logout */
+
+.back-to-home{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    padding: 0 0 15px 0;
+}
+.back-to-home a {
+    text-decoration: underline;
+    color: #9c27b0;
+}
+
+/* Dashboard */
+
+.card.mb-3 {
+    margin-bottom: 30px !important;
+}
+.card.mb-3 {
+    margin-bottom: 30px !important;
+}
+.card.mb-1 {
+    margin-bottom: 10px !important;
+}
+.card {
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+    border-width: 0;
+    transition: all .2s;
+}
+.card.mb-3 {
+    margin-bottom: 30px !important;
+}
+.card {
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+    border-width: 0;
+    transition: all .2s;
+    background: #fff;
+    border-radius: 5px;
+}
+.card-body{
+    padding: 15px;
+}
+.card-body > p{
+    text-align: right;
+}
+.card-body > p > a{
+    padding: 5px;
+    background:
+}
+.card-title {
+    text-transform: uppercase;
+    color: rgba(13,27,62,0.7);
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.list-group-item a{
+    color:#495057;
+}
+.list-group-item.active {
+    z-index: 2;
+    background-color: #3f6ad8;
+    border-color: #007bff;
+}
+.list-group-item.active a{
+    color: #fff;
+}
+
+/* Tables */
+.trading-table{
+    margin-bottom: 10px;
+}
+.trading-table h3{
+    font-size: 16px;
+    color:#fff;
+    margin: 25px 0 0 0;
+}
+.trading-table > div > div > span{
+    font-size: 14px;
+    color: #9c27b0;
+    line-height: 18px;
+}
+/* Drag and Drop */
+.dropzone {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  transition: background-color 0.3s;
+  background: #fff0f0;
+}
+.dragging.menu {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  color: #fff;
+  background-color: #29e;
+  touch-action: none;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  box-shadow: 5px 4px 3px 0 rgba(0,0,0,0.25);
+  margin: 3px;
+  border:0;
+}
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #4e4;
+}
+

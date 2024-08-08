@@ -1,0 +1,22 @@
+{% extends "v1/base.html" %}
+
+{% load static %}
+
+{% block css %}
+<link href="{% static 'css/v1/default.css' %}" rel="stylesheet"
+      type="text/css"/>
+{% endblock css %}
+{% block fixed_jS %}
+<script src="{% static 'js/v1/jquery-3.6.0.min.js' %}"></script>
+<script src="{% static 'js/v1/utils.js' %}"></script>
+<script src="{% static 'js/v1/fin_tip.js' %}"></script>
+<script src="{% static 'js/v1/client.js' %}"></script>
+{% endblock fixed_jS %}
+
+{% block scontainer %}
+<script>top.window.location="/my-app/";</script>
+{% endblock scontainer %}
+
+{% block body_footer %}
+{% include "v1/footer.html" %}
+{% endblock body_footer %}

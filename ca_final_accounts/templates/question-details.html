@@ -1,0 +1,85 @@
+{% extends "layout_extended.html" %}
+{% load static %}
+
+{% block container %}
+<div id="main-content">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Question Details 333</h2>
+                            <h3>{{question.name}}</h3>
+                        </div>
+                        <div class="col-sm-6 text-right align">
+                            <a href="/my-app/answer/{{question.slug}}-{{question.name}}/"
+                               class="btn btn-primary">Solve</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="table-responsive q-details">
+                            <table class="table table-curved">
+                                <tr>
+                                    <td>
+                                        <table width="100%">
+                                            <thead>
+                                            <tr>
+                                                <th>DEBIT BALANCE</th>
+                                                <th>AMOUNT (&#8377;)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for d1 in debit_balance %}
+                                            <tr>
+                                                <td>{{d1.attribute}}</td>
+                                                <td>{{d1.amount}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table width="100%">
+                                            <thead>
+                                            <tr>
+                                                <th>CREDIT BALANCE</th>
+                                                <th>AMOUNT (&#8377;)</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for d1 in credit_balance %}
+                                            <tr>
+                                                <td>{{d1.attribute}}
+                                                </td>
+                                                <td>{{d1.amount}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            {% if adjustment %}
+                            <hr/>
+                            <div>Adjustment</div>
+                            <table border="1">
+                                <tbody>
+                                {% for aj in adjustment %}
+                                <tr>
+                                    <th>{{aj.attribute}}</th>
+                                    <th>{{aj.amount}}</th>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock container %}

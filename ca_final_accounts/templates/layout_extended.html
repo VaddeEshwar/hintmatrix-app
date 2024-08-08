@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet"
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'css/font-awesome.min.css'%}" />
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/slider/jquery.maximage.css'%}" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/slider/screen.css'%}" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'css/main.css'%}" type="text/css" />
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+{% endblock css %}
+
+{% block body_footer %}
+    {% include 'footer.html' %}
+{% endblock body_footer %}
+
+{% block fixed_jS %}
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/slider/jquery.cycle.all.js'%}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/slider/jquery.maximage.js'%}" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="{% static 'js/client.js' %}"></script>
+{% endblock fixed_jS%}
+
+{% block scontainer %}
+<script>top.window.location="/my-app/";</script>
+{% endblock scontainer %}

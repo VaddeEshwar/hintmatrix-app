@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
+    <link href="{% static 'img/v2/favicon.ico'%}" rel="shortcut icon">
+    <title>hintMatrix</title>
+    <link href="{% static 'css/v2/default.css'%}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="site-wrapper">
+    <header class="head less">
+        <div class="container">
+            <div class="wrapper">
+                <a class="logo" href="/" title=""><img alt="" src="{% static 'img/v2/logo.png'%}"/></a>
+                <a class="nav-toggle">
+                    <span class="toggle"></span>
+                    <span class="toggle"></span>
+                    <span class="toggle"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="box-one big-2">
+        <div class="bor-cont">
+            <h2 class="text-center padding-bottom">Sign Up</h2>
+            <div class="login-form signup-form">
+                {% if is_active %}
+                <div>User account activated successfully.</div>
+                <a href="{% url 'website_v2:login' %}">Login</a>
+                {% else %}
+                <div>Invalid account.</div>
+                {% endif %}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+</div>
+<div class="clearfix margin-bottom-5"></div>
+
+<footer class="footer">
+    © {% now 'Y' %} hintMatrix. All rights reserved. <a href="#">Terms and Conditions</a> - <a href="#">Privacy
+    Policy</a> - <a href="#">Refund Policy</a>
+</footer>
+</body>
+</html>

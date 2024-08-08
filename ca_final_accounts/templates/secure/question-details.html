@@ -1,0 +1,98 @@
+{% extends "secure/secure_layout_extended.html" %}
+{% load static %}
+
+{% block scontainer %}
+
+<!-- -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading">
+                    <h2 class="text-center">Question Details</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-right align">
+                <a href="/my-app/answer/{{question.slug}}-{{question.name}}/"
+                   class="btn btn-primary">Solve</a>
+                <h3 class="text-left">{{question.name}}</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-card mb-1 card">
+                    <div class="question-body">
+                        <div class="row">
+                            <div class="col-sm-12 headings">
+                                <div class="col-sm-4 col-xs-4 no-pad"><span>Debit Balance</span></div>
+                                <div class="col-sm-2 col-xs-2 no-pad"><span>Amount</span></div>
+                                <div class="col-sm-4 col-xs-4 no-pad"><span>Credit Balance</span></div>
+                                <div class="col-sm-2 col-xs-2 no-pad"><span>Amount</span></div>
+                            </div>
+                            <div class="col-sm-12 values">
+                                {% for d1 in debit_balance %}
+                                <div class="col-sm-4 col-xs-4 no-pad"><div class="form-field">{{d1.attribute}}</div></div>
+                                <div class="col-sm-2 col-xs-2 no-pad">
+                                    <div class="form-field">
+                                        {{d1.amount}}
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                                {% for d1 in credit_balance %}
+                                <div class="col-sm-4 col-xs-4 no-pad">
+                                    <div class="form-field">
+                                        {{d1.attribute}}
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-2 no-pad">
+                                    <div class="form-field">
+                                        {{d1.amount}}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if adjustment %}
+                <div class="main-card mb-1 card">
+                    <div class="question-body">
+                        <div class="row">
+                            <div class="col-sm-12 headings">
+                                <div class="col-sm-4 col-xs-4 no-pad">
+                                    <span>Adjustment</span></div>
+                                <div
+                                        class="col-sm-2 col-xs-2 no-pad">
+                                    <span>&nbsp;</span></div>
+                            </div>
+                            <div class="col-sm-12 values">
+                                {% for d1 in adjustment %}
+                                <div class="col-sm-4 col-xs-4 no-pad">
+                                    <div class="form-field">
+                                        {{d1.attribute}}
+                                    </div>
+                                </div>
+                                <div class="col-sm-2 col-xs-2 no-pad">
+                                    <div class="form-field">
+                                        {{d1.amount}}
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock scontainer %}
